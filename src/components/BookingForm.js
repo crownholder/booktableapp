@@ -24,7 +24,7 @@ const BookingForm1 = () => {
   };
 
   return (
-    <div>
+    <div style={{marginTop:'275px'}}>
       {isSubmitted ? (
         <div style={{ margin: '25px' }}>
           <h2>Thank You for Your Booking!</h2>

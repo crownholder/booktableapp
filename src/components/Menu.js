@@ -10,7 +10,7 @@ const data = [
 
 const Menu = () => {
   return (
-    <div>
+    <div style={{marginTop:'195px'}}>
         <h2>Menu</h2>
         {data.map((item)=>{
           return(

@@ -42,7 +42,58 @@
   grid-template-columns: 300px 500px 100px;
   grid-template-rows: 2fr 1fr;
   background-color: rgb(243, 247, 247);
+  margin: 25px;
 }
 h3{
   color: blue;
+  margin: 25px;
+}
+h2{
+  margin: 25px;
+}
+/* Add your existing styles here */
+
+/* Hamburger menu styles */
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #333;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  text-align: center;
+  display: none;
+}
+
+.menu.active {
+  display: block;
+}
+
+.menu ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.menu ul li {
+  padding: 10px;
+}
+
+.menu-icon {
+  cursor: pointer;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+  .menu-icon.active {
+    background-color: transparent;
+  }
+
+  .menu-icon.active .MuiSvgIcon-root {
+    color: #fff; /* Change the color to your desired icon color */
+  }
+}
+h1{
+  text-align: center;
 }
