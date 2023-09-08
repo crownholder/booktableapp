@@ -15,7 +15,7 @@ import { AppBar } from '@mui/material'
 const Header = () => {
   return (
     <div>
-        <AppBar style={{ background: 'yellow' }}>
+        <AppBar style={{ background: '#d3e16a50' }}>
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -28,7 +28,14 @@ const Header = () => {
             </li>
           </ul>
         </AppBar>
-        <div style={{background:'darkgreen',display:'flex', flexDirection:'row',color:'white', minHeight:'20vH',marginTop:'90px'}} >
+        <div style={{
+          background:'darkgreen',
+          display:'flex',
+          flexDirection:'row',
+          color:'white', 
+          minHeight:'20vH',
+          marginTop:'90px'
+            }} >
        <span><img src={Logo} style={styleImg} alt='logo'/></span><h1>Little Lemon</h1>
       </div>
     

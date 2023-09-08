@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import BookingForm1 from './components/BookingForm'; 
 import Menu from './components/Menu';
+import './App.css'
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
           
           <Route path="/booking" element={<BookingForm1 />} /> 
 
-          <Route path="/booking" element={<Menu />} /> 
+          <Route path="/menu" element={<Menu />} /> 
         </Routes>
       </div>
     </BrowserRouter>
