@@ -2,7 +2,7 @@ import React from 'react'
 import Logo from './lemon.png'
 import { Link } from 'react-router-dom'
 import { AppBar } from '@mui/material'
-import Home from './Home'
+
 
   const styleImg = {
     width:'80px',
@@ -29,7 +29,7 @@ const Header = () => {
           </ul>
         </AppBar>
         <div style={{background:'darkgreen',display:'flex', flexDirection:'row',color:'white', minHeight:'20vH',marginTop:'90px'}} >
-       <span><img src={Logo} style={styleImg}/></span><h1>Little Lemon</h1>
+       <span><img src={Logo} style={styleImg} alt='logo'/></span><h1>Little Lemon</h1>
       </div>
     
       <hr style={{opacity:'25%'}}/>

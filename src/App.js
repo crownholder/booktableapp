@@ -1,9 +1,8 @@
 import React from 'react';
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
-import { AppBar } from '@mui/material'; // Assuming you are using Material-UI
-import Header from './components/Header'; // Assuming you have a Header component
-import Home from './components/Home'; // Import the Home component
-import BookingForm1 from './components/BookingForm'; // Import the BookingForm1 component
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Header from './components/Header'; 
+import Home from './components/Home';
+import BookingForm1 from './components/BookingForm'; 
 import Menu from './components/Menu';
 
 function App() {
