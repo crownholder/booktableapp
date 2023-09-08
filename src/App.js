@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import { AppBar } from '@mui/material'; // Assuming you are using Material-UI
+import Header from './components/Header'; // Assuming you have a Header component
+import Home from './components/Home'; // Import the Home component
+import BookingForm1 from './components/BookingForm'; // Import the BookingForm1 component
+import Menu from './components/Menu';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <Header/>
+      <div>
+        <Routes>
+          <Route exact path="/" element={<Home />} /> 
+          
+          <Route path="/booking" element={<BookingForm1 />} /> 
+
+          <Route path="/booking" element={<Menu />} /> 
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
