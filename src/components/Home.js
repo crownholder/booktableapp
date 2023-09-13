@@ -9,8 +9,7 @@ const Home = () => {
         <Profile/>
        <img src={SpecialDinner} style={{width:'99%'}}/>
        
-       <Button variant='contained' style={{background:'green',marginLeft:'125px',marginTop:'25px'}}>Book A Table</Button>
-   
+       
     </div>
   )
 }
