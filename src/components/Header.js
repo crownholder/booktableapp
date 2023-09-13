@@ -1,14 +1,10 @@
 import React, { useState } from 'react';
 import Logo from './lemon.png';
 import { Link } from 'react-router-dom';
-import { AppBar } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu'
-
-
-const styleImg = {
-  width: '80px',
-  margin: '25px'
-};
+import { AppBar, Toolbar, Typography, IconButton } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import InputBox from './InputBox';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,37 +12,58 @@ const Header = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
   return (
-    <div>
-      <AppBar style={{ background: '#d3e16a50' }}>
+    <AppBar style={{ background: 'darkgreen' }}>
+      <Toolbar>
         <div className={`menu ${isMenuOpen ? 'active' : ''}`}>
           <ul>
             <li>
-              <Link to="/" onClick={toggleMenu} style={{color:'white'}}>Home</Link>
+              <Link to="/" onClick={toggleMenu} style={{ color: 'white' }}>
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/menu" onClick={toggleMenu} style={{color:'white'}}>Menu</Link>
+              <Link to="/menu" onClick={toggleMenu} style={{ color: 'white' }}>
+                Menu
+              </Link>
             </li>
             <li>
-              <Link to="/booking" onClick={toggleMenu} style={{color:'white'}}>Book a table</Link>
+              <Link
+                to="/booking"
+                onClick={toggleMenu}
+                style={{ color: 'white' }}
+              >
+                Tables
+              </Link>
             </li>
           </ul>
         </div>
-        <div className="logo-container" style={{
-          background: 'darkgreen',
-          display: 'flex',
-          flexDirection: 'row',
-          color: 'white',
-          minHeight: '20vH',
-          marginTop: '0px'
-        }}><span><div className="menu-icon" onClick={toggleMenu}>
-        <MenuIcon fontSize="large"  style={{color:'black'}}/>
-      </div></span>
-      <img src={Logo} style={{maxWidth:'15vH'}}/><h1>Little Lemon</h1>
+    
+        <div
+          className="logo-container"
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+          }}
+        >
+          <div className="menu-icon" onClick={toggleMenu}>
+            <MenuIcon fontSize="large" style={{ color: 'white' }} />
+          </div>
+          <div style={{marginLeft:'8px',display:'flex'}}>
+          <span><Typography variant='h5' color="white" marginRight="110px">Little Lemon</Typography></span>
+          </div>
+          
+          <IconButton style={{ color: 'black' }}>
+            <ShoppingCartIcon  style={{color:'white'}}/>
+          </IconButton>
         </div>
-      </AppBar>
-    </div>
+      </Toolbar>
+    </AppBar>
   );
-}
+};
 
 export default Header;
+

@@ -91,9 +91,17 @@ h2{
   }
 
   .menu-icon.active .MuiSvgIcon-root {
-    color: #fff; /* Change the color to your desired icon color */
+    color: #fff; 
   }
 }
 h1{
   text-align: center;
+  color: white;
+}
+h2{
+  color: black;
+}
+.inputBox{
+  width: 300px;
+  height: 35px;
 }

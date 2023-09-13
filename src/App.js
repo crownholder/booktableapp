@@ -5,11 +5,15 @@ import Home from './components/Home';
 import BookingForm1 from './components/BookingForm'; 
 import Menu from './components/Menu';
 import './App.css'
+import TableManager from './components/TableManager';
+import InputBox from './components/InputBox';
 
 function App() {
   return (
     <BrowserRouter>
     <Header/>
+    <InputBox/>
+  
       <div>
         <Routes>
           <Route exact path="/" element={<Home />} /> 

@@ -1,0 +1,14 @@
+[
+    {"id":1,"number":1,"capacity":8,"isReserved":false },
+    {"id":2,"number":2,"capacity":6,"isReserved":true},
+    {"id":3,"number":3,"capacity":4,"isReserved":false },
+    {"id":4,"number":4,"capacity":3,"isReserved":false},
+    {"id":5,"number":5,"capacity":8,"isReserved":true },
+    {"id":6,"number":6,"capacity":6,"isReserved":false},
+    {"id":7,"number":7,"capacity":4,"isReserved":true },
+    {"id":8,"number":8,"capacity":3,"isReserved":false},
+    {"id":9,"number":9,"capacity":8,"isReserved":false },
+    {"id":10,"number":10,"capacity":6,"isReserved":false},
+    {"id":11,"number":11,"capacity":4,"isReserved":true},
+    {"id":12,"number":12,"capacity":3,"isReserved":true}
+]
